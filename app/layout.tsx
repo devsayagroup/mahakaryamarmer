@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Balthazar, Noto_Sans} from "next/font/google";
 import "@/styles/globals.css"
+import Header from "@/components/layout/Header";
 
 const styleFont = Balthazar({
   variable: "--font-style",
@@ -26,9 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${styleFont.variable} ${textFont.variable} font-text antialiased`}
-      >
+      <body className={`${styleFont.variable} ${textFont.variable} font-text antialiased`}>
+        <Header/>
         {children}
       </body>
     </html>
