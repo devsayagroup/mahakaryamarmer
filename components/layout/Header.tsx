@@ -26,7 +26,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 z-50 w-full backdrop-blur-sm py-6">
+    <header className="fixed top-0 z-50 w-full backdrop-blur-xs py-6">
       <div className="container mx-auto flex justify-between items-center px-6 md:px-14">
         <motion.div className="flex justify-start items-center gap-12">
           <Link href="/" onClick={() => setMenuOpen(false)}>
